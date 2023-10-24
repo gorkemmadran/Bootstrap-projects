@@ -15,7 +15,7 @@
     <title>Bootstrap5 İlk Proje</title>
   </head>
   <body>
-    <nav class="navbar shadow-lg navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar shadow-lg fixed-top navbar-expand-lg  bg-white">
       <div class="container">
         <a class="text-decoration-none text-danger fw-bolder fs-4" href="#"
           >G.M</a
@@ -41,24 +41,38 @@
                 class="nav-link text-danger text-decoration-none"
                 aria-current="page"
                 href="#"
-                >Anasayfa</a
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger text-decoration-none" href="#about"
+                >About</a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link text-danger text-decoration-none" href="#"
-                >Features</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-danger text-decoration-none" href="#"
-                >Pricing</a
+                >Services</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link text-danger text-decoration-none"
                 aria-disabled="true"
-                >Doldurulcak</a
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-danger text-decoration-none"
+                aria-disabled="true"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-danger text-decoration-none"
+                aria-disabled="true"
+                >Contact</a
               >
             </li>
           </ul>
@@ -67,13 +81,13 @@
     </nav>
     <div class="container">
       <div
-        class="content "
+        class="content mt-4 " id="Anasayfa"
       >
         <div class="row vh-100 d-flex align-items-center justify-content-end m-0 p-0">
           <div class="col-md-6 d-flex flex-column justify-content-center order-1">
-            <h6 class="text-black-50  ">Hello I'm</h6>
+            <h6 class="text-black-50 fs-4 ">Hello I'm</h6>
             <h1 class="text-danger fw-bold m-0 p-0">WEB DESIGNER</h1>
-            <h5 class="text-dark fw-bolder mt-1 p-0">Görkem Madran</h5>
+            <h5 class="text-dark fw-bolder mt-3 p-0">Görkem Madran</h5>
             <div class="row">
               <div class="col-md-12">
                 <p class="my-3">
@@ -86,21 +100,83 @@
             </div>
             <div>
               <button class="btn btn-md btn-danger  text-white fw-bold">
-                My work
+               <a class="text-white text-decoration-none" target="_blank" href="https://github.com/gorkemmadran">My work</a>
               </button>
             </div>
           </div>
           <div class="col-md-6">
             <img
-              class="img-fluid img-thumbnail rounded-circle"
+              class="img-fluid border border-danger border-4  rounded-circle"
               src="./img/Ekran Resmi 2023-10-15 16.25.47.png"
               alt=""
             />
+           
+            
           </div>
         </div>
       </div>
     </div>
+<div class="text-center fs-1  fw-bolder text-dark" id="about">About Me</div>
+<div class="container mt-5">
+  <div class="row align-items-center justify-content-center my-5 ">
+    <div class="col-6">
+      <h1 class="fw-bold fs-3 ">About myself</h1>
+      <p class="fs-5 mt-3 ">Hello, I am Görkem, I am 25 years old and I have been improving myself in web development for 1 year. Technologies I use: Html, Css, Git, Github, Bootstrap and Javascript</p>
+      <div class="d-flex align-items-center justify-content-around mt-4">
+        <div class="1">
+          <h1 class="text-center fw-bold">100</h1>
+          <p>PROJECT COMPLETED</p>
+        </div>
+        <div class="text-center">
+          <h1 class="fw-bold">90</h1>
+          <p>HAPPY CLIENTS</p>
+        </div>
+        <div class="text-center">
+          <h1 class="fw-bold">95</h1>
+          <p>POSITIVE REVIEWES</p>
+        </div>
+       </div>
+       <div class="mt-3">
+        <button class="btn btn-danger text-white">Download CV</button>
+        <i class="fa-brands ms-5 fs-3 m-1 ps-5 fa-facebook-f"></i>
+        <i class="fa-brands ms-2 fs-3 m-1  fa-twitter"></i>
+        <i class="fa-brands ms-2 fs-3 m-1 fa-instagram"></i>
+        <i class="fa-brands ms-2 fs-3 m-1  fa-linkedin-in"></i>
+       </div>
+    </div>
+   
+    <div class="col-6">
+      <p class="p-0 m-0">HTML</p>
+      <div class="progress m-2" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped" style="width: 95%"></div>
+      </div>
+      <p class="p-0 m-0">CSS</p>
 
+      <div class="progress  m-2" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped bg-success" style="width: 85%"></div>
+      </div>
+      <p class="p-0 m-0">BOOTSTRAP</p>
+
+      <div class="progress  m-2" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped bg-info" style="width: 90%"></div>
+      </div>
+      <p class="p-0 m-0">JAVASCRIPT</p>
+
+      <div class="progress  m-2" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%"></div>
+      </div>
+      <p class="p-0 m-0">GIT</p>
+
+      <div class="progress m-2" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped bg-danger" style="width: 100%"></div>
+      </div>
+      <p class="p-0 m-0">GITHUB</p>
+      <div class="progress m-2" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped" style="width: 100%"></div>
+      </div>
+    </div>
+  </div>
+</div>
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
